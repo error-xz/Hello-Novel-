@@ -1,0 +1,416 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff0f5; 
+    color: #333;
+}
+
+header {
+    background-color: #6c5ce7; 
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    background-color: #574b90; 
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block; 
+}
+
+nav a {
+    display: block;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none; 
+    font-weight: bold;
+    transition: background-color 0.3s ease; 
+}
+
+nav a:hover {
+    background-color: #1abc9c; 
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto; 
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #6c5ce7;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 4px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+img:hover {
+    transform: scale(1.03); 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); 
+}
+
+.main-content-block {
+    display: flex; 
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.main-text {
+    flex: 2; 
+}
+
+.main-sidebar-img {
+    flex: 1; 
+}
+
+.main-sidebar-img img {
+    width: 100%;
+    margin: 0;
+}
+
+.quote-box {
+    background-color: #fff8fa;
+    border-left: 4px solid #6c5ce7; 
+    padding: 10px 15px;
+    margin-top: 20px;
+    border-radius: 0 4px 4px 0;
+}
+
+.quote-box p {
+    margin: 0;
+    color: #574b90;
+    font-size: 15px;
+}
+
+.genres-wrapper {
+    display: flex; 
+    gap: 30px;
+    align-items: center;
+}
+
+.genres-list {
+    flex: 2;
+}
+
+.genres-list ul li {
+    margin-bottom: 25px; 
+    line-height: 1.6;
+    list-style-type: none; 
+}
+
+.genres-list ul li p {
+    margin: 5px 0 0 0; 
+    color: #444; 
+    font-size: 14px;
+}
+
+.chibi-assistant {
+    flex: 1;
+    text-align: center;
+}
+
+.chibi-img {
+    max-width: 200px;
+    margin: 0 auto;
+    animation: floatChibi 3s ease-in-out infinite;
+}
+
+.chibi-bubble {
+    background: #fff8fa;
+    border: 2px solid #574b90;
+    padding: 8px 12px;
+    border-radius: 15px;
+    margin-top: 10px;
+    display: inline-block;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+}
+
+.chibi-bubble p {
+    margin: 0;
+    font-size: 13px;
+    font-weight: bold;
+    color: #574b90;
+}
+
+@keyframes floatChibi {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); } 
+    100% { transform: translateY(0px); }
+}
+
+.intro-text {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.device-card {
+    background: #fff8fa;
+    border-left: 4px solid #6c5ce7;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.reverse-card {
+    flex-direction: row-reverse;
+    border-left: none;
+    border-right: 4px solid #6c5ce7; 
+}
+
+.device-info {
+    flex: 2; 
+}
+
+.device-info h3 {
+    margin-top: 0;
+    color: #574b90;
+}
+
+.device-img {
+    flex: 1;
+    max-width: 280px; 
+    height: auto;
+    margin: 0 !important;
+}
+
+.game-meta {
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px dashed #e0d0e0;
+    font-size: 13px;
+    color: #666;
+}
+
+form p {
+    margin-bottom: 15px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #6c5ce7; 
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #6c5ce7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #1abc9c;
+}
+
+.gallery-intro {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    color: #555;
+}
+
+.gallery-item {
+    display: flex; 
+    gap: 20px;
+    align-items: flex-start;
+    background: #fff8fa;
+    border: 1px solid #e0d0e0;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.02);
+}
+
+.gallery-item img {
+    max-width: 50% !important; 
+    margin: 0 !important; 
+}
+
+.gallery-desc {
+    flex: 1; 
+    padding: 0;
+}
+
+.gallery-desc h3 {
+    margin: 0 0 10px 0;
+    color: #574b90;
+    font-size: 18px;
+}
+
+.gallery-desc p {
+    margin: 0;
+    line-height: 1.5;
+    color: #444;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .main-content-block, .genres-wrapper, .device-card, .reverse-card {
+        flex-direction: column;
+    }
+    .device-img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    nav li {
+        display: block; 
+    }
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+    .gallery-item {
+        flex-direction: column;
+    }
+    .gallery-item img {
+        max-width: 100% !important;
+    }
+}
+.genres-list ul {
+    padding: 0;
+    margin: 0;
+}
+
+.genres-list ul li {
+    background: #fff8fa; /* Нежный пастельный фон для каждого жанра */
+    border-left: 4px solid #6c5ce7; /* Фиолетовая декоративная линия слева */
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.03); /* Легкая тень */
+}
+
+.genres-list ul li strong {
+    display: block;
+    font-size: 18px;
+    color: #574b90; /* Делаем заголовок жанра красивым темно-фиолетовым */
+    margin-bottom: 8px;
+}
+.genres-list ul li {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Подготавливаем карточку к плавной анимации */
+}
+
+.genres-list ul li:hover {
+    transform: translateY(-3px); /* Картинка плавно приподнимается вверх на 3 пикселя */
+    box-shadow: 0 5px 15px rgba(108, 92, 231, 0.15); /* Появляется мягкая фиолетовая тень */
+    background-color: #fffbfc; /* Фон становится чуточку светлее при наведении */
+}
+/* Двухколоночный макет для Жанров */
+.genres-page-layout {
+    display: flex;
+    gap: 25px;
+    align-items: stretch; /* Растягивает обе колонки на одинаковую высоту */
+}
+
+.genres-text-side {
+    flex: 2.3; /* Текст занимает больше места */
+}
+
+.genres-text-side ul {
+    padding: 0;
+    margin: 0;
+}
+
+/* Оформление карточек жанров */
+.genre-single-card {
+    background: #fff8fa;
+    border-left: 4px solid #6c5ce7;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+    list-style-type: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.genre-single-card:hover {
+    transform: translateX(5px); /* При наведении карточка плавно сдвигается чуть вправо */
+    box-shadow: 0 5px 15px rgba(108, 92, 231, 0.12);
+    background-color: #fffbfc;
+}
+
+.genre-single-card strong {
+    display: block;
+    font-size: 17px;
+    color: #574b90;
+    margin-bottom: 6px;
+}
+
+.genre-single-card p {
+    margin: 0;
+    color: #444;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.genres-image-side {
+    flex: 1.8;
+    background-image: url("genres_long.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-color: #fff0f5; /* ВОТ ЭТА СТРОЧКА: она уберет черную пустоту снизу, сделав фон пастельным! */
+    border-radius: 6px;
+    min-height: 600px;
+}
+
+
+
+
+
+}
+
+
+/* Адаптивность для мобилок: картинка уйдет под текст, чтобы не сминаться в узкую полоску */
+@media (max-width: 768px) {
+    .genres-page-layout {
+        flex-direction: column;
+    }
+    .long-sidebar-img {
+        height: 300px; /* На телефонах она станет обычной горизонтальной картинкой */
+    }
+}
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Визуальные новеллы - Контакты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Hello, Novel!</h1>
+        <p>Сайт-проект об индустрии Визуальных Новелл</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="history.html">История</a></li>
+            <li><a href="genres.html">Жанры</a></li>
+            <li><a href="devices.html">Устройства</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+			<li><a href="recommendations.html">Рекомендации</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+
+        <div class="container">
+        <h2>Обратная связь</h2>
+        <p>Если вы тоже любите визуальные новеллы или хотите порекомендовать интересную историю, заполните форму ниже:</p>
+        
+        <!-- Оборачиваем форму и чибика в один ряд -->
+        <div class="genres-wrapper">
+            
+            <div class="genres-list">
+                <form action="https://formspree.io/f/xzdwvzwy" method="POST">
+                    <p>
+                        <label>Ваше имя:<br>
+                        <input type="text" name="username" required></label>
+                    </p>
+                    <p>
+                        <label>Ваш Email:<br>
+                        <input type="email" name="useremail" required></label>
+                    </p>
+                    <p>
+                        <label>Название новеллы или отзыв:<br>
+                        <textarea name="message" rows="5" required></textarea></label>
+                    </p>
+                    <p>
+                        <input type="submit" value="Отправить сообщение">
+                    </p>
+                </form>
+            </div>
+
+            <!-- Наш чибик теперь живет здесь и постоянно плавно покачивается, никому не мешая! -->
+            <div class="chibi-assistant">
+                <img src="chibi.gif" alt="Танцующий чиби-помощник" class="chibi-img">
+                <div class="chibi-bubble">
+                    <p>Жду твоего сообщения! ^_~</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Авторский проект о ВН. Автор: Аветисян Диана. Сделано с душой.</p>
+    </footer>
+
+</body>
+</html>
